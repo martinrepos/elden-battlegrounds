@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1208;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cinzelTitle {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #f9c043;
+  text-align: center;
+  border-bottom: 1px solid #653815;
+  padding-bottom: 0.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: lighter;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #1c1209;
+  color: #f9c043;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 2px solid #653815;
+}
+
+.sidebar h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #f9c043;
+  text-align: center;
+  border-bottom: 1px solid #653815;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar input {
+  background-color: #27170d;
+  border: 1px solid #653815;
+  color: #f9c043;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar button {
+  background-color: #653815;
+  border: none;
+  color: #f9c043;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar button:hover {
+  background-color: #a85c1c;
+}
+
+.sidebar p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #bd6707;
+}
+
+/* Main Area */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #1e1208;
+  overflow: hidden;
+  padding: 0;
+  color: #f9c043;
+}
+
+/* Welcome Section */
+.welcome-scale {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  overflow: auto;
+}
+
+.welcome-message {
+  
+  background: #1e1208;
+ 
+  
+  color: #f9c043;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.welcome-message h2,
+.welcome-message h3,
+.welcome-message h4 {
+  margin-top: 1.5em;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.feature-column {
+  flex: 1 1 45%;
+}
+
+.feature-column ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.feature-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-note {
+  margin-top: 2.5rem;
+}
+
+.footer-note p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.footer-note a {
+  color: #f9c043;
+  text-decoration: underline;
+}
+
+/* Chat log */
+.log {
+  height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  border: 1px solid #653815;
+  background: #27170d;
+  color: #f9c043;
+}
+
+.log h3 {
+  position: sticky;
+  padding: 5px;
+  margin: 0;
+  top: 0;
+  background: #27170d;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+/* Chat input area */
+.controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.controls input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: #1c1209;
+  border: 1px solid #653815;
+  color: #f9c043;
+  border-radius: 100px;
+}
+
+.controls button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  color: #bd6707;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+  }
+
+  .feature-column {
+    flex: 1 1 100%;
+  }
+}

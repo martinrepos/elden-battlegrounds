@@ -1,0 +1,105 @@
+{
+    "Stun": {
+      "description": "Prevents the target from acting during their next turn.",
+      "duration": 1,
+      "type": "debuff",
+      "effect": "skip_turn"
+    },
+    "Paralyze": {
+      "description": "Each turn, there's a 33% chance the target can't act.",
+      "duration": 2,
+      "type": "debuff",
+      "effect": "chance_to_skip_turn",
+      "chance": 100
+    },
+    "Attack Up": {
+      "description": "Increases the user's damage output by 25%.",
+      "duration": 2,
+      "type": "buff",
+      "effect": "increase_attack",
+      "modifier": 1.25
+    },
+    "Defense Down": {
+      "description": "Decreases the target's defense by 25%.",
+      "duration": 2,
+      "type": "debuff",
+      "effect": "decrease_armor",
+      "modifier": 0.75
+    },
+    "Damage Reduction": {
+      "description": "Reduces all incoming damage by 30%.",
+      "duration": 2,
+      "type": "buff",
+      "effect": "reduce_damage",
+      "modifier": 0.7
+    },
+    "HP Reduction": {
+      "description": "Reduces the target's max HP by 10%.",
+      "duration": 0,
+      "type": "debuff",
+      "effect": "reduce_max_hp",
+      "value": 10
+    },
+    "Fear": {
+      "description": "Lowers the target's accuracy by 25%.",
+      "duration": 2,
+      "type": "debuff",
+      "effect": "reduce_accuracy",
+      "modifier": 0.5
+
+    },
+    "Evasion Up": {
+      "description": "Increases the user's chance to dodge by 40%.",
+      "duration": 1,
+      "type": "buff",
+      "effect": "increase_evasion",
+      "modifier": 1.4
+    },
+    "Silence": {
+      "description": "Prevents use of special abilities for one turn.",
+      "duration": 1,
+      "type": "debuff",
+      "effect": "disable_abilities"
+    },
+    "Burn": {
+      "description": "Deals 10 damage at the end of each turn.",
+      "duration": 2,
+      "type": "debuff",
+      "effect": "damage_over_time",
+      "value": 10
+    },
+    "Doom": {
+      "description": "Target dies after 3 turns if not removed.",
+      "duration": 3,
+      "type": "debuff",
+      "effect": "delayed_instant_death"
+    },
+    "Scarlet Rot": {
+      "description": "Deals 8 damage per turn for 3 turns.",
+      "duration": 3,
+      "type": "debuff",
+      "effect": "damage_over_time",
+      "value": 8
+    },
+    "Heal": {
+      "description": "Restores HP when applied.",
+      "duration": 0,
+      "type": "buff",
+      "effect": "restore_hp",
+      "value": 20
+    },
+    "Speed Up": {
+      "description": "Next attack hits twice.",
+      "duration": 1,
+      "type": "buff",
+      "effect": "extra_attack"
+    },
+    "Revive": {
+      "description": "Prevents death once and revives with 20 HP.",
+      "duration": 999,
+      "type": "buff",
+      "effect": "revive_once",
+      "value": 20
+    }
+  }
+  
